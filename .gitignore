@@ -1,0 +1,8 @@
+# IDE specific code
+.idea/
+
+# Python environment
+env3/
+
+# Bytecode
+**/__pycache__/

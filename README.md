@@ -1,4 +1,15 @@
-# FixMatch
+# Semi-Supervised Learning
+
+This repository is a fork of the "FixMatch" GitHub repository. It contains baseline
+algorithms like MeanTeacher, Pseudo-Labeling, VAT and the Pi-Model, but also state-of-the-art
+approaches such as UDA, MixMatch, ReMixMatch and FixMatch. This fork extends the code
+base with Self-Supervised Semi-Supervised Learning (S^4L) and the Mix of All Models
+(MOAM), that were previously not tested on 
+
+Many of the building blocks needed already existed, such as VAT and the rotation 
+loss also used in ReMixMatch. To minimize the effect of our changes on the repository
+we used these code snippets by copying instead of refactoring them into new 
+utility files. 
 
 Code for the paper: "[FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence](https://arxiv.org/abs/2001.07685)" by 
 Kihyuk Sohn, David Berthelot, Chun-Liang Li, Zizhao Zhang, Nicholas Carlini, Ekin D. Cubuk, Alex Kurakin, Han Zhang, and Colin Raffel.
