@@ -94,6 +94,7 @@ class ReMixMatch(MixMatch):
         p_data = layers.PData(self.dataset)
 
         if w_rot > 0:
+            # Rotate one augmented version of every image in the batch
             rot_y, rot_l = random_rotate(y_in[:, 1])
             with tf.device(next(gpu)):
                 rot_logits = self.classifier_rot(self.classifier(rot_y, training=True, **kwargs).embeds)

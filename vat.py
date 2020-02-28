@@ -117,5 +117,5 @@ if __name__ == '__main__':
     FLAGS.set_default('dataset', 'cifar10.3@250-5000')
     FLAGS.set_default('batch', 64)
     FLAGS.set_default('lr', 0.002)
-    FLAGS.set_default('train_kimg', 1 << 16)
+    FLAGS.set_default('train_kimg', 1 << 14)
     app.run(main)
